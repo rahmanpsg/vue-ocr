@@ -6,7 +6,7 @@
         <v-row>
           <v-col cols="12" sm="6">
             <v-card elevation="7" shaped>
-              <v-card-text style="height: 245px">
+              <v-card-text class="cardImage">
                 <v-row
                   v-if="url"
                   class="d-flex flex-column"
@@ -62,7 +62,7 @@
           <v-col cols="12" sm="6">
             <v-card elevation="10">
               <v-card-text>
-                <v-container style="height: 260px">
+                <v-container class="containerForm">
                   <v-row
                     v-if="proses"
                     class="fill-height"
@@ -246,3 +246,15 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style scoped>
+@media only screen and (min-width: 600px) {
+  .cardImage {
+    height: 245px;
+  }
+
+  .containerForm {
+    height: 260px;
+  }
+}
+</style>
